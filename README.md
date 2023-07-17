@@ -1,7 +1,7 @@
 # Understanding C++: Smart Pointers, Custom Deleters, and Object Lifetime Control
 This repository hosts a concise example illustrating some of the advanced concepts of C++ such as smart pointers, custom deleters, and controlling object lifetimes. The code features a Base class which is designed to be managed using a std::unique_ptr with a custom deleter.
 
-Code Explanation
+# Code Explanation
 The Base class has a private constructor and destructor, which means objects of this class can only be created and destroyed within member functions of the class itself. This is an example of controlling object lifetime and encapsulating the responsibility of object management within the class.
 
 The static Base::Create method is used to create Base objects. This method returns a std::unique_ptr<Base> with a custom deleter.
